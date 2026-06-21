@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background: #ececec;
+    font-family: 'Comfortaa', cursive;
+    color: #111;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Верхний блок */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Фото */
+
+.photo-block {
+    border: 5px dashed #000;
+    padding: 15px;
+    border-radius: 12px;
+
+    margin-right: 100px;
+}
+
+.photo-frame {
+    background: white;
+    padding: 10px;
+    width: 400px;
+}
+
+.photo-frame img {
+    width: 100%;
+    display: block;
+}
+
+/* Текст приглашения */
+
+.invite-text {
+    max-width: 420px;
+    
+    margin-right: 200px;
+
+}
+
+.invite-text h1 {
+    font-size: 36px;/*дорого гость*/
+    margin-bottom: 20px;
+}
+
+.invite-text p {
+    font-size: 28px; /*мы тебя*/
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.invite-text span {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 28px;/*парти пройдёт*/
+    line-height: 1.6;
+}
+
+.date strong {
+    color: #d40000;
+}
+
+/* Расписание */
+
+.schedule {
+    margin-top: 80px;
+}
+
+.schedule h2 {
+    font-size: 42px;/*расписание*/
+    margin-bottom: 50px;
+}
+
+.day {
+    margin-bottom: 70px;
+}
+
+.day h3 {
+    color: #c40000; /*1 и 2 день*/
+    font-size: 52px;
+    margin-bottom: 35px;
+}
+
+.event {
+    margin-bottom: 25px;/*отступ*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.time {
+    color: #c40000;/*время выкупа и загса*/
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 48px;/*выкуп*/
+}
+
+.big {
+    font-size: 64px; /*загс*/
+    font-weight: bold;
+}
+
+.party {
+    font-size: 64px;/*2 день*/
+}
+
+/* Адрес */
+
+.address {
+    margin-top: 80px;
+}
+
+.address h2 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.address p {
+    font-size: 42px; /*адреса*/
+    margin-bottom: 15px;
+}
+
+/* Адаптив */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .invite-text {
+        text-align: center;
+    }
+
+    .invite-text h1 {
+        font-size: 28px;
+    }
+
+    .invite-text p,
+    .date {
+        font-size: 22px;
+    }
+
+    .schedule h2 {
+        font-size: 30px;
+    }
+
+    .day h3 {
+        font-size: 36px;
+    }
+
+    .time,
+    .desc {
+        font-size: 30px;
+    }
+
+    .big,
+    .party {
+        font-size: 42px;
+    }
+
+    .address h2 {
+        font-size: 30px;
+    }
+
+    .address p {
+        font-size: 24px;
+    }
+
+}
+/* SURVEY */
+
+.survey {
+
+    margin-top: 100px;
+
+    padding: 50px;
+
+    background: rgba(255,255,255,0.6);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+}
+
+.survey h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 40px;
+}
+
+.form-group {
+
+    margin-bottom: 30px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+.form-input,
+.form-select {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    border: 2px solid #ddd;
+
+    font-size: 20px;
+}
+
+.form-checkbox {
+
+    transform: scale(1.5);
+
+    margin-right: 10px;
+}
+
+button {
+
+    padding: 20px 40px;
+
+    background: #c40000;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.05);
+}
+/* ALCOHOL CHECKBOXES */
+.radio-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-list input {
+    transform: scale(1.4);
+}
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    font-size: 18px;
+    resize: vertical;
+}
+/* RADIO */
+
+.radio-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+.radio-list input {
+
+    transform: scale(1.5);
+}
+
+
+/* CHECKBOX */
+
+.checkbox-list ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.checkbox-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+.checkbox-list input {
+
+    transform: scale(1.5);
+}
+
+
+/* INPUTS */
+
+.form-input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 2px solid #ddd;
+
+    font-size: 20px;
+}
+
+
+textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 2px solid #ddd;
+
+    font-size: 18px;
+
+    resize: vertical;
+}
+
+.photo-block {
+    border: 5px dashed #000;
+    padding: 15px;
+    border-radius: 12px;
+
+    margin-right: 100px;
+}
+
+.dress-code-example {
+    background: white;
+    padding: 20px;
+    width: 800px;
+}
+
+.dress-code-example img {
+    width: 400%;
+    display: block;
+}

@@ -1,0 +1,280 @@
+/* ==========================================
+   БАЗОВЫЕ СБРОСЫ И ОБЩИЕ НАСТРОЙКИ
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: white;
+    font-family: 'Comfortaa', cursive;
+    color: #111;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;   /* было 700px — даст больше пространства */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   HERO – верхний блок (фото + приглашение)
+   ========================================== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Фото */
+.photo-block {
+    border: 5px dashed #000;
+    padding: 15px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+
+
+.photo-frame {
+    padding: 0px;
+    width: 600px;
+}
+
+.photo-frame img {
+    width: 200%;
+}
+
+/* Текст приглашения */
+.invite-text {
+    max-width: 100%;
+    margin-right: 0px;
+     
+}
+
+.invite-text h1 {
+
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.invite-text p {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.invite-text span {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 45px;
+    line-height: 1.5;
+}
+
+.date strong {
+    color: #d40000;
+}
+
+/* ==========================================
+   РАСПИСАНИЕ
+   ========================================== */
+.schedule {
+    margin-top: 50px;
+    
+}
+
+.schedule h2 {
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+
+
+
+.day {
+    margin-bottom: 80px;
+    width: auto;        /* вместо несуществующих 2000p; */
+    line-height: 1.5;
+}
+
+
+.day h3 {
+    color: #c40000;
+    font-size: 52px;
+    
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.event {
+    
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.time {
+    color: #c40000;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 48px;
+}
+
+
+.big {
+    font-size: 64px;
+    font-weight: bold;
+/* Чтобы "Дачный переполох" точно не переносился */
+
+    white-space: nowrap;
+}
+
+
+
+.party {
+    font-size: 64px;
+}
+
+/* ==========================================
+   АДРЕСА
+   ========================================== */
+.address {
+    margin-top: 80px;
+}
+
+.address h2 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.address p {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   ФОРМА ОПРОСА (SURVEY)
+   ========================================== */
+.survey {
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.survey h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.form-input,
+textarea {
+    width: 100%;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 20px;
+    resize: vertical;
+}
+
+/* Списки радио и чекбоксов */
+.radio-list ul,
+.checkbox-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-list li,
+.checkbox-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.radio-list input,
+.checkbox-list input {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+/* Кнопка отправки */
+button {
+    padding: 20px 40px;
+    background: #c40000;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   БЛОК ДРЕСС-КОДА (ПРИМЕР)
+   ========================================== */
+.dress-code-example {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo-dress {
+    width: 120px;
+    float: left;
+    margin: 0 15px 10px 0;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.photo-dress img {
+    width: 100%;
+    height: auto;
+}
+
+/* Текст рядом с фото дресс-кода (использован класс .day, стили выше) */
+.dress-code-example .day {
+    margin-top: 0;
+    font-size: 200%;
+    
+}
+
